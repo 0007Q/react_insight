@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Dominic from './Components/Cards/SingleCard'
+import SingleCard from './Components/Cards/SingleCard'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <h2>Learn React</h2>
         <p>Dominic Colson</p>
-        <Dominic />
+        <SingleCard value="1234" chart="bar chart"/>
       </header>
     </div>
   );

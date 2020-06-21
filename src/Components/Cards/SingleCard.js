@@ -2,14 +2,17 @@ import React from 'react'
 
 import '../Styles/SingleCard.css'
 
-class Dominic extends React.Component {
-    render(){
-        return (
-            <div>
-             <h2>Dominicddd</h2>
-            </div>
-        );
-    }
-}
-
-export default Dominic;
+export default function SingleCard(props) {
+    return (
+    <div className='dom'>
+    <div className="grid-container shadow">
+    <div className='grid-item item1'>{props.icon}
+      <div>Git Hub</div>
+    </div>
+      <div className='grid-item item2'>{props.value}</div>
+    <div className='grid-item item3'>{props.change}</div>
+    <div className='grid-item item4'>{props.chart}</div>
+    </div>
+    </div>
+    );
+  }
