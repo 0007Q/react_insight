@@ -10,7 +10,7 @@ export default function SingleCard(props) {
       <div>Git Hub</div>
     </div>
       <div className='grid-item item2'>{props.value}</div>
-    <div className='grid-item item3'>{props.change}</div>
+    <div className='grid-item item3'>{props.trend}</div>
     <div className='grid-item item4'>{props.chart}</div>
     </div>
     </div>
