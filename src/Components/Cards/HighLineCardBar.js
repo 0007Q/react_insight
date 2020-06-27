@@ -3,7 +3,7 @@ import { ColumnChart } from '@opd/g2plot-react'
 
 const config = {title: {
   visible: false,
-  text: 'Dom',
+  text: 'Title',
 },
 forceFit: true,
 data: [
@@ -45,6 +45,7 @@ xField: 'type',
 yField: 'sales',
 meta: {
   type: {
+    visible: false,
     alias: 'Dominic',
   },
   sales: {
@@ -55,7 +56,6 @@ meta: {
 
 export default () => (
   <section>
-    <h2>ColumnChart Example</h2>
     <ColumnChart {...config} />
   </section>
 )

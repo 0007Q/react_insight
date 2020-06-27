@@ -5,12 +5,17 @@
     background-color: #2196F3;
     padding: 1px;
     width: 350px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    border-style: solid;
+    border-width: thin;
+    border-color: 'black';
   }
 
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #2196F3;
     text-align: center;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 0px; 
     font-size: 30px;
   }
 
@@ -29,7 +34,8 @@
     grid-row: 1 / span 1;
     text-align: right;
     height: 30px;
-    padding-top: 0px;
+    padding-top: 12px;
+    padding-right: 20px;
     font-size: 15px;
   }
   
@@ -40,6 +46,7 @@
     font-size: 15px;
     text-align: right;
     padding-top: 0px;
+    padding-right: 20px;
   }
 
   .item4 {
