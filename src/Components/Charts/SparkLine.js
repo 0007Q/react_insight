@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Sparklines, SparklinesLine, SparklinesCurve, SparklinesBars } from 'react-sparklines'
+import { Sparklines, SparklinesCurve } from 'react-sparklines'
 
 class SparkLine extends Component {
     render() {

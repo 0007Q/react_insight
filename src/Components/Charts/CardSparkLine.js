@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Sparklines, SparklinesLine, SparklinesCurve, SparklinesBars, SparklinesSpots } from 'react-sparklines'
+import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines'
 
 function boxMullerRandom () {
     let phase = false,
-        x1, x2, w, z;
+        x1, x2, w; // add w, z;
 
     return (function() {
 
@@ -27,7 +27,7 @@ function randomData(n = 30) {
 }
 
 const sampleData = randomData(30);
-const sampleData100 = randomData(100);
+// const sampleData100 = randomData(100);
 
 class CardSparkLine extends Component {
 
@@ -43,7 +43,7 @@ class CardSparkLine extends Component {
     render() {
         return (
             <div>
-                <Sparklines data={sampleData} limit={20}>
+                <Sparklines data={sampleData} limit={20}> 
                 <SparklinesLine style={{ stroke: "blue", fill: "#41c3f9", fillOpacity: ".25" }}/>
                 <SparklinesSpots size={4} style={{ stroke: "#336aff", strokeWidth: 3, fill: "white" }} />
                 </Sparklines >
