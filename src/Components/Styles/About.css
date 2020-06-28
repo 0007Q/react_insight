@@ -1,0 +1,16 @@
+.about-container {
+    display: grid;
+    grid-template-rows: 70px 130px 100px;
+}
+
+.about-itam1 {
+    grid-row: 1; 
+}
+
+.about-itam2 {
+    grid-row: 2;
+}
+
+.about-itam3 {
+    grid-row: 3; 
+}

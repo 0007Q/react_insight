@@ -4,10 +4,15 @@ import './HighLineHeader.css'
 import SparkLine from '../Charts/SparkLine'
 import SparkLineBar from '../Charts/SparkLineBar'
 
+import Example from '../DataPicker/DatePicker'
+
+
 export default function HeaderLine(props) {
     return (
             <div className="container-head">
-                <div className="item1a">Widget HighLineHeader</div>
+                <div className="item1a"></div>
+                <div className="item1aa">Start Date <Example /></div>
+                <div className="item1bb">End Date <Example /></div>
                 <div className="item2a">THIS MONTH</div>
                 <div className="item3a">$12,000</div>
                 <div className="item4a"><SparkLine /></div>
