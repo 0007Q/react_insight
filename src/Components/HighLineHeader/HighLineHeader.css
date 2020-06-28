@@ -1,7 +1,7 @@
 .container-head {
     display: grid;
-    grid-template-columns: 55% 10% 10% 10% 10% 5%;
-    background-color: #2196F3;
+    grid-template-columns: 60% 10% 7% 10% 8% 5%;
+    
   }
 
   .item1a {
@@ -11,59 +11,62 @@
 
    .item2a {
       grid-column: 2;
-      background-color: red;
+      
       display: flex;
       align-items: flex-end;
       justify-content: flex-start;
       font-size: 8px;
+      padding-left: 40px;
   }
 
   .item3a {
       grid-column: 2;
-      background-color: coral; 
+       
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
+      padding-left: 40px;
+      color: green;
   }
 
   .item4a {
       grid-column: 3;
       grid-row: 1 /span 2;
-      background-color: blue; 
-      padding-top: 20px;
+      padding-top: 30px;
   }
 
   .item5a {
       grid-column: 4;
       grid-row: 1;
-      background-color: pink; 
+      
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       font-size: 10px;
       padding-top: 15px;
-      padding-left: 5px;
+      padding-left: 40px
   }
 
   .item6a {
       grid-column: 4;
       grid-row: 2;
-      background-color: brown; 
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
+      padding-left: 40px;
   }
 
   .item7a {
       grid-column: 5;
       grid-row: 1 /span 2;
-      background-color: lime; 
+       
+      padding-top: 30px;
   }
 
   .item8a {
       grid-column: 6;
       grid-row: 1 /span 2;
-      background-color: pink; 
+      
   }
 
   

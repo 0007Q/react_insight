@@ -1,9 +1,8 @@
 .grid-container {
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 0px;
     border-radius: 10px;
-    background-color: #2196F3;
-    padding: 1px;
+    padding: 0px;
     width: 350px;
     box-shadow: 5px 5px 5px 5px #888888;
     border-style: solid;
@@ -12,17 +11,22 @@
   }
 
   .grid-item {
-    background-color: #2196F3;
+    
     text-align: center;
     border-radius: 10px;
     padding: 0px; 
     font-size: 30px;
+    
   }
 
-  .item1 {
+  .icon {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    height: 80px;
+    padding-top: 30px;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
   }
 
   .item1 > div{
@@ -47,6 +51,7 @@
     text-align: right;
     padding-top: 0px;
     padding-right: 20px;
+    color: green;
   }
 
   .item4 {
