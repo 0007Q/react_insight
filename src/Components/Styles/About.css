@@ -11,6 +11,22 @@
     grid-row: 2;
 }
 
-.about-itam3 {
-    grid-row: 3; 
+.below-container {
+    display: grid;
+    grid-template-columns: 1100px 0px 0px; 
+    padding-left: 160px;
+}
+
+.below-itam3 {
+    grid-column: 1;
+    padding-left: 10px;
+}
+
+.below-spacer {
+    grid-column: 2;
+}
+
+.below-itam4 {
+    grid-column: 3;
+    padding-left: 10px;
 }

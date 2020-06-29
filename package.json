@@ -10,8 +10,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "apexcharts": "^3.19.3",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
+    "react-apexcharts": "^1.3.7",
     "react-bootstrap": "^1.0.1",
     "react-charts": "^2.0.2-next.6",
     "react-datepicker": "^3.0.0",
@@ -20,7 +22,9 @@
     "react-resizeable": "^0.2.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-sparklines": "^1.7.0"
+    "react-sparklines": "^1.7.0",
+    "react-vis": "^1.11.7",
+    "react-viz": "0.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

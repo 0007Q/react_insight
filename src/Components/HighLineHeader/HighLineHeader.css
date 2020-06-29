@@ -30,7 +30,6 @@
 
   .item3a {
       grid-column: 4;
-       
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
@@ -47,7 +46,6 @@
   .item5a {
       grid-column: 6;
       grid-row: 1;
-      
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
