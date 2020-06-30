@@ -5,6 +5,8 @@ import BarChart from '../Charts/VisChartBar'
 import ApexChart from '../Charts/ApexChartBar'
 import ApexCharts from '../Charts/ApexChartArea'
 
+import ApexChartSync from '../Charts/ApexChartsSync'
+
 function ChartsPage () {
     return (
         <div>
@@ -15,6 +17,7 @@ function ChartsPage () {
          </div>
          <ApexChart />
          <ApexCharts />
+         <ApexChartSync />
         </div>        
     )
 }

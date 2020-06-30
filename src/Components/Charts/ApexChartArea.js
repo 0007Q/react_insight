@@ -1,8 +1,9 @@
 import React from 'react'
-import ReactApexChart from "react-apexcharts";
+import ApexCharts from "react-apexcharts";
 
+window.ApexCharts = ApexCharts
 
-class ApexCharts extends React.Component {
+class ReactApexCharts extends React.Component {
     constructor(props) {
       super(props);
 
@@ -448,7 +449,7 @@ class ApexCharts extends React.Component {
 </div>
 
 <div id="chart-timeline">
-<ReactApexChart options={this.state.options} series={this.state.series} type="area" height={250} />
+<ApexCharts options={this.state.options} series={this.state.series} type="area" height={250} />
 </div>
 </div>
 
@@ -458,4 +459,4 @@ class ApexCharts extends React.Component {
   }
 
 
-export default ApexCharts
+export default ReactApexCharts
