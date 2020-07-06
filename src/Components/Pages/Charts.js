@@ -7,6 +7,9 @@ import ApexCharts from '../Charts/ApexChartArea'
 
 import ApexChartSync from '../Charts/ApexChartsSync'
 
+import Dominic from '../Cards/testProps'
+import StateProps from '../StateFolder/StateProps'
+
 function ChartsPage () {
     return (
         <div>
@@ -18,6 +21,7 @@ function ChartsPage () {
          <ApexChart />
          <ApexCharts />
          <ApexChartSync />
+         <Dominic test="Shit shit workssss"/>
         </div>        
     )
 }

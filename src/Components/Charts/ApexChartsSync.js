@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactApexChart from 'react-apexcharts'
 
+import Dominic from '../Cards/testProps'
+import StateProps from '../StateFolder/StateProps'
+
 class ApexChartSync extends React.Component {
     constructor(props) {
       super(props);
@@ -24,7 +27,7 @@ class ApexChartSync extends React.Component {
       this.state = {
       
         series: [{
-          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 20, {
+          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 40, {
             min: 10,
             max: 60
           })
@@ -45,7 +48,7 @@ class ApexChartSync extends React.Component {
         },
       
         seriesLine2: [{
-          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 20, {
+          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 100, {
             min: 10,
             max: 30
           })
@@ -66,7 +69,7 @@ class ApexChartSync extends React.Component {
         },
       
         seriesArea: [{
-          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 20, {
+          data: generateDayWiseTimeSeries(new Date('11 Feb 2017').getTime(), 50, {
             min: 10,
             max: 60
           })
@@ -90,8 +93,6 @@ class ApexChartSync extends React.Component {
       };
     }
 
-  
-
     render() {
       return (
         
@@ -106,7 +107,10 @@ class ApexChartSync extends React.Component {
 <div id="chart-area">
 <ReactApexChart options={this.state.optionsArea} series={this.state.seriesArea} type="bar" height={160} />
 </div>
+<Dominic test={this.state.series}/>
+<StateProps test={this.state.series} />
 </div>
+
 
 
       );
