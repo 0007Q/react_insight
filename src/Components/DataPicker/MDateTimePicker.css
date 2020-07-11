@@ -1,0 +1,15 @@
+.dom {
+    border: white;
+    border-bottom: 1px solid red;
+    width: 220px;
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+.title {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    height: 2px;
+    color: #808080;
+}

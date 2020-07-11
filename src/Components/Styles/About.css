@@ -3,6 +3,10 @@
     grid-template-rows: 70px 130px 100px;
 }
 
+.line{
+    border-bottom: 3px solid #4588ba; 
+}
+
 .about-itam1 {
     grid-row: 1; 
 }
@@ -14,11 +18,13 @@
 .below-container {
     display: grid;
     grid-template-columns: 1100px 0px 0px; 
+    grid-template-rows: 10px 0px 230px 100px;
     padding-left: 160px;
 }
 
 .below-itam3 {
     grid-column: 1;
+    grid-row: 3;
     padding-left: 10px;
 }
 
@@ -27,6 +33,7 @@
 }
 
 .below-itam4 {
-    grid-column: 3;
+    grid-column: 1;
+    grid-row: 4;
     padding-left: 10px;
 }
