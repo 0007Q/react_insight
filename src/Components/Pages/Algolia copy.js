@@ -6,19 +6,17 @@ import 'instantsearch.css/themes/algolia.css';
 
 const searchClient = algoliasearch('NHXM9XB7XM', '453f08b261f2bb3cfae5dbd0505f5627');
 
-function Algolia() {
+function DropDown() {
   const options = [
-    { id: 1, label: "Nationwide", value: "dev_brand" },
-    { id: 2, label: "Server", value: "servers"}
+    { label: "Nationwide", value: "dev_drand" },
+    { label: "Server", value: "servers"}
   ];
 
-  const [selected, setSelected] = useState("");
-  const Aindex = JSON.stringify(selected).slice(39, 48)
-  //const domw = dom.slice(39, 48)
+  const [selected, setSelected] = useState([]);
 
   return (
     <div>
-     <a>Please select an Index...</a>
+     <a>Please select an Index... {JSON.stringify(selected)}</a>
      <div>
       <MultiSelect
         options={options}
@@ -26,9 +24,19 @@ function Algolia() {
         onChange={setSelected}
         labelledBy={"Select"}
         hasSelectAll={false}
-        overrideStrings={{"selectSomeItems": "Select Index..."}} />
-      <p></p>
-        <InstantSearch searchClient={searchClient} indexName={Aindex}>
+        overrideStrings={{"selectSomeItems": "Select Index..."}}
+      />
+      </div>
+    </div>
+  );
+}
+
+function Algolia({selected}) {
+  
+  return (
+    <div>
+        <DropDown />
+        <InstantSearch searchClient={searchClient} indexName={selected}>
         <SearchBox translations={{ placeholder: 'Please enter key word'}}/>
         <p></p>
         <Hits />
@@ -36,7 +44,6 @@ function Algolia() {
         </InstantSearch>
         <pre>{JSON.stringify(selected)}</pre>
       </div>
-    </div>
   );
 }
 

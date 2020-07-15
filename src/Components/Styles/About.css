@@ -18,7 +18,7 @@
 .below-container {
     display: grid;
     grid-template-columns: 1100px 0px 0px; 
-    grid-template-rows: 10px 0px 230px 100px;
+    grid-template-rows: 10px 0px 300px 30px 60px;
     padding-left: 160px;
 }
 
@@ -35,5 +35,11 @@
 .below-itam4 {
     grid-column: 1;
     grid-row: 4;
+    padding-left: 10px;
+}
+
+.below-itam5 {
+    grid-column: 1;
+    grid-row: 6;
     padding-left: 10px;
 }
