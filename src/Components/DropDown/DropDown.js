@@ -9,11 +9,14 @@ export default function DropDown() {
     { label: "Server", value: "servers"}
   ];
 
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState();
+
+  let dom = JSON.stringify(selected)
 
   return (
+    
     <div>
-     <a>Please select an Index... </a>
+     <a>Please select an Index... {dom}</a>
      <div>
       <MultiSelect
         options={options}

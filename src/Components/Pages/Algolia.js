@@ -9,16 +9,16 @@ const searchClient = algoliasearch('NHXM9XB7XM', '453f08b261f2bb3cfae5dbd0505f56
 function Algolia() {
   const options = [
     { id: 1, label: "Nationwide", value: "dev_brand" },
-    { id: 2, label: "Server", value: "servers"}
+    { id: 2, label: "Server....", value: "dev_logstash"}
   ];
 
-  const [selected, setSelected] = useState("");
-  const Aindex = JSON.stringify(selected).slice(39, 48)
-  //const domw = dom.slice(39, 48)
+  const [selected, setSelected] = useState('');
+  const Aindex = JSON.stringify(selected).slice(39, 51)
+  
 
   return (
     <div>
-     <a>Please select an Index...</a>
+     <a>Please select an Index...{Aindex}</a>
      <div>
       <MultiSelect
         options={options}
